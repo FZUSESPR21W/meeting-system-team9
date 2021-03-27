@@ -1,28 +1,25 @@
 <template>
     <div id="forum">
         <div class="card1">
-            <el-card class="box-card1">
+            <el-card class="box-card1" shadow="hover" style="background-image: linear-gradient(to bottom right, #fc7b5f, #fcccb2);">
                 <div slot="header" class="clearfix">
-                <span>论坛名</span>
-                <el-button style="float: right; padding: 3px 0" type="text">进入</el-button>
+                <span style="color:white">论坛名</span>
+                </div>
+                <div class="text item">
+                {{'巴拉巴拉' }}
+                </div> 
+            </el-card>
+            <el-card class="box-card1" shadow="hover" style="background-image: linear-gradient(to bottom right, #a170f1, #dfbafa);">
+                <div slot="header" class="clearfix">
+                <span style="color:white">论坛议题</span>
                 </div>
                 <div class="text item">
                 {{'巴拉巴拉' }}
                 </div>
             </el-card>
-            <el-card class="box-card1">
+            <el-card class="box-card1" shadow="hover" style="background-image: linear-gradient(to bottom right, #398af1, #81d4fd);">
                 <div slot="header" class="clearfix">
-                <span>论坛时间、议题</span>
-                <el-button style="float: right; padding: 3px 0" type="text">进入</el-button>
-                </div>
-                <div class="text item">
-                {{'巴拉巴拉' }}
-                </div>
-            </el-card>
-            <el-card class="box-card1">
-                <div slot="header" class="clearfix">
-                <span>分论坛主名、参与人数</span>
-                <el-button style="float: right; padding: 3px 0" type="text">进入</el-button>
+                <span style="color:white">分论坛主名、参与人数</span>
                 </div>
                 <div class="text item">
                 {{'巴拉巴拉' }}
@@ -34,39 +31,40 @@
 
     <div class="selectanddropdown">
       <div class="dropdown">
-          <el-dropdown>
-          <span class="el-dropdown-link">
-            下拉菜单<i class="el-icon-arrow-down el-icon--right"></i>
-          </span>
-          <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item>巴拉巴拉下拉框</el-dropdown-item>
-          </el-dropdown-menu>
-        </el-dropdown>
+            <el-select v-model="value" clearable placeholder="请选择" id="dropdown1" @change="show_change">
+                <el-option
+                v-for="item in options"
+                :key="item.id"
+                :label="item.label"
+                :value="item.label">
+                </el-option>
+            </el-select>
       </div>
       <div class="input">
-        <el-input v-model="input" placeholder="请输入内容"></el-input>
+        <el-input v-model="search" placeholder="请输入内容" id="input"></el-input>
       </div>
+      <div class="search"><el-button icon="el-icon-search" circle @click="btnsearch"></el-button></div>
     </div>
 
 
 
 
     <div class="cards">
-      <el-card class="box-card" v-for="o in 10" :key="o" >
+      <el-card class="box-card" v-for="itemcard in totalinfo" :key="itemcard" shadow="hover">
         <div  class="text1 item1" >
-          {{'id:' }}
+          {{'id:' +itemcard.id}}
         </div>
         <div  class="text1 item1">
-          {{'发布者id:' }}
+          {{'发布者id:' +itemcard.id2}}
+        </div>
+        <div  class="text1 item1" v-show="hidden">
+          {{'发布论坛id:' +itemcard.id3}}
         </div>
         <div  class="text1 item1">
-          {{'发布论坛id:' }}
+          {{'内容:' +itemcard.content}}
         </div>
         <div  class="text1 item1">
-          {{'内容:' }}
-        </div>
-        <div  class="text1 item1">
-          {{'发布时间:' }}
+          {{'发布时间:' +itemcard.publishtime}}
         </div>
       </el-card>
     </div>
@@ -78,14 +76,111 @@
 
 <script>
 export default {
+    created () {
+        this.showinfo();
+        this.creatselect();
+    },
     name: "Forum",
 
     data() {
-        return {};
+        return {
+            search: '',
+            hidden: true,
+            input: '',
+            options: [{
+                id:'1',
+                label: '黄金糕'
+                }, {
+                id:'2',
+                label: '双皮奶'
+                }, {
+                id:'3',
+                label: '蚵仔煎'
+                }, {
+                id: '4',
+                label: '龙须面'
+                }, {
+                id: '5',
+                label: '北京烤鸭'
+                }],
+            value: '',
+            totalinfo:[
+                {
+                    id: '1',
+                    id2: '2',
+                    id3: '3',
+                    content: 'bala bala',
+                    publishtime: '3.11'
+                },{
+                    id: '2',
+                    id2: '2',
+                    id3: '3',
+                    content: 'bala bala',
+                    publishtime: '3.11'
+                },{
+                    id: '3',
+                    id2: '2',
+                    id3: '3',
+                    content: 'bala bala',
+                    publishtime: '3.11'
+                }
+                
+
+            ],
+        };
     },
 
-    methods: {},
+    methods: {
+    //     totalinfo(search){
+    // 	// 我这里直接return（也可赋给变量return变量出去）
+    //     return this.totalinfo.filter(itemcard => {
+    //     	// 如果list(name)包含key(输入框) => true
+    //         if(itemcard.name.includes(key)){
+    //         	// 返回item
+    //             return item;
+    //        }
+    //    })
+    // },
+
+        show_change(id){//根据下拉框选择的信息来更新totalinfo
+            this.$axios({
+                method: 'post',
+                url: '...',
+                data:{
+                    forum: id,
+                }
+            }).then((res)=>{
+                this.totalinfo = res;
+            })
+        },
+        btnsearch(){
+            this.$axios({//根据搜索的信息来更新totalinfo
+                method: 'post',
+                url: '...',
+                data:{
+                    searchitem: document.getElementById('input').value,
+                }
+            }).then((res)=>{
+                this.totalinfo = res;
+            })
+        },
+        showinfo(){//一开始showinfo全部的信息
+            console.log('111');
+            this.$axios.get('/showinfo').then((res)=>{
+                this.totalinfo = res;
+            })
+        },
+        creatselect(){
+            console.log('更新下拉框');
+            this.$axios.get('/sssss').then((res)=>{
+                this.options = {};
+                this.options = res;
+            })
+        }
+
+    },
 };
+
 </script>
 
 <style scoped>
@@ -103,6 +198,7 @@ export default {
  }
 .text {
   font-size: 14px;
+  color: white;
 }
 
 .item {
@@ -110,7 +206,7 @@ export default {
 }
 .item1 {
   padding: 18px 0;
-  margin-left: 100px;
+  margin-left: 40px;
 }
 
 .box-card {
@@ -119,13 +215,13 @@ export default {
   margin: 5px;
   margin-left: 140px;
   margin-top: 20px;
+  text-align: center;
 }
 .box-card1 {
   display: inline-block;
   margin-left: 80px;
   margin-top: 10px;
   width: 300px;
-  float: left;
   height: 150px;
 }
 .selectanddropdown{
@@ -135,13 +231,15 @@ export default {
   margin-left: 100px;
   position: relative;
   top: 50px;
-  right: 1000px;
+  left: 40px;
 }
 .cards{
   position: relative;
   top: 40px;
 }
 .card1{
+    display: flex;
+    flex: 1;
     height: 150px;
 }
 .el-dropdown-link {
@@ -159,4 +257,9 @@ export default {
   display: inline-block;
   width: 200px;
 }
+.search{
+  display: inline-block;
+  width: 200px;
+}
+
 </style>
