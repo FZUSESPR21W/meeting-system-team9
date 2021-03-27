@@ -130,6 +130,13 @@ export default {
 
     methods: {
 
+        tipInfo(info, type) {
+            this.$message({
+                message: info,
+                type: type
+            });
+        },
+
         initPersonInfo() {
             this.$axios({
                 method:'get',
@@ -139,7 +146,7 @@ export default {
                 if (res.code == 200) {
                     this.tableData = res.data;
                 } else {
-                    tipInfo('好像哪里出了点问题','error');
+                    this.tipInfo('好像哪里出了点问题','error');
                 }
             })
             .catch( err => {
@@ -156,7 +163,7 @@ export default {
                 if (res.code == 200) {
                     this.forums = res.data;
                 } else {
-                    tipInfo('好像哪里出了点问题','error');
+                    this.tipInfo('好像哪里出了点问题','error');
                 }
             })
             .catch( err => {

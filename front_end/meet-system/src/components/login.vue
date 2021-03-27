@@ -95,7 +95,7 @@ export default {
                 if (res.code == 200) {
                     this.forums = res.data;
                 } else {
-                    tipInfo('好像哪里出了点问题','error');
+                    this.tipInfo('好像哪里出了点问题','error');
                 }
             })
             .catch( err => {
@@ -130,12 +130,12 @@ export default {
                     localStorage.setItem('id', res.id);
                     localStorage.setItem('username', res.username)
                     localStorage.setItem('role', res.role);
-                    tipInfo('登陆成功！','success');
+                    this.tipInfo('登陆成功！','success');
                     setTimeout(() => {
                         this.$router.push({name: 'meeting'});
                     },2000);
                 } else {
-                    tipInfo('用户名密码错误！','error');
+                    this.tipInfo('用户名密码错误！','error');
                 }
             })
             .catch( err => {
@@ -162,12 +162,12 @@ export default {
                     localStorage.setItem('id', res.id);
                     localStorage.setItem('username', res.username)
                     localStorage.setItem('role', res.role);
-                    tipInfo('注册成功！','success');
+                    this.tipInfo('注册成功！','success');
                     setTimeout(() => {
                         this.$router.push({name: 'meeting'});
                     },2000);
                 } else {
-                    tipInfo('注册失败（可能原因：用户名已被占用）','error');
+                    this.tipInfo('注册失败（可能原因：用户名已被占用）','error');
                 }
             })
             .catch( err => {
