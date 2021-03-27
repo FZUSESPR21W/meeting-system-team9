@@ -17,6 +17,4 @@ public interface BaseCURD<T> {
     public void update(String[] propertyName,Object[] value);
     //根据条件查询(主键)
     public List<T> readByKey(String[] propertyName, Object[] value);
-    //随机查询多条不重复数据
-    public List<T> readRand(int num);
 }

@@ -13,8 +13,8 @@ public class MessageDaoImpl implements BaseCURD<Message> {
 
     @Override
     public int create(Message dataClass) {
-        String sql="insert into message(userId,forumId,time,content) values(?,?,?,?)";
-        Object[] paramsValue={dataClass.getUserId(), dataClass.getForumId(), dataClass.getTime(), dataClass.getContent()};
+        String sql="insert into message(userId,forumId,time,,title,content) values(?,?,?,?,?)";
+        Object[] paramsValue={dataClass.getUserid(), dataClass.getForumid(), dataClass.getTime(),dataClass.getTitle(), dataClass.getContent()};
         baseDao.update(sql,paramsValue);
         return -1;
     }
