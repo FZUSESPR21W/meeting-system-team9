@@ -17,7 +17,7 @@ const router = new VueRouter({
     routes: [
         {
             path: '/',
-            redirect: { name: 'home' },
+            redirect: { name: 'meeting' },
         },
         {
             path: '/home',
