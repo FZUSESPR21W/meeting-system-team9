@@ -4,28 +4,46 @@
             <template v-if="isLogin">
                 <div>
                     欢迎你, {{ user_name }}!
-                    <span id="logout">&nbsp;&nbsp;(注销)</span>
+                    <span id="logout" @click="go_logout">
+                        &nbsp;&nbsp;(注销)
+                    </span>
                 </div>
             </template>
             <template v-else>
-                <div id="login" @click="go_login()">登陆 / 注册</div>
+                <div id="login" @click="go_login">登陆 / 注册</div>
             </template>
         </div>
         <div id="content">
             <div id="sidebar">
-                <div class="sidebar_item" @click="go_meeting">
+                <div
+                    class="sidebar_item"
+                    :class="{ is_show: isMeeting }"
+                    @click="go_meeting"
+                >
                     <i class="icon el-icon-suitcase"></i>
                     会议信息
                 </div>
-                <div class="sidebar_item" @click="go_forum">
+                <div
+                    class="sidebar_item"
+                    :class="{ is_show: isForum }"
+                    @click="go_forum"
+                >
                     <i class="icon el-icon-place"></i>
                     论坛信息
                 </div>
-                <div class="sidebar_item" @click="go_person_info">
+                <div
+                    class="sidebar_item"
+                    :class="{ is_show: isInfo }"
+                    @click="go_person_info"
+                >
                     <i class="icon el-icon-user"></i>
                     参会人员
                 </div>
-                <div class="sidebar_item" @click="go_send_message">
+                <div
+                    class="sidebar_item"
+                    :class="{ is_show: isMessage }"
+                    @click="go_send_message"
+                >
                     <i class="icon el-icon-s-promotion"></i>
                     发布信息
                 </div>
@@ -43,17 +61,57 @@ export default {
     data() {
         return {
             isLogin: false,
-            user_name: "2333",
+            user_name: "",
+            isMeeting: true,
+            isForum: false,
+            isInfo: false,
+            isMessage: false,
+            path: this.$route.path,
         };
     },
 
     created() {
-        // 获取是否注册信息
+        let id = localStorage.getItem("id");
+        if (id != null) {
+            this.isLogin = true;
+            this.user_name = localStorage.getItem("username");
+        }
+    },
+
+    watch: {
+        path: {
+            handler(newValue) {
+                let v = newValue.split("/");
+                let value = v[v.length - 1];
+
+                this.isMeeting = false;
+                this.isForum = false;
+                this.isInfo = false;
+                this.isMessage = false;
+
+                if (value == "meeting") {
+                    this.isMeeting = true;
+                } else if (value == "forum") {
+                    this.isForum = true;
+                } else if (value == "person_info") {
+                    this.isInfo = true;
+                } else if (value == "send_message") {
+                    this.isMessage = true;
+                }
+            },
+
+            immediate: true,
+        },
     },
 
     methods: {
         go_login() {
             this.$router.push({ name: "login" });
+        },
+
+        go_logout() {
+            localStorage.removeItem("id");
+            this.$router.go(0);
         },
 
         go_meeting() {
@@ -136,6 +194,7 @@ export default {
     margin-right: 5%;
 }
 
+.is_show,
 .sidebar_item:hover {
     cursor: pointer;
     background-color: #409eff;

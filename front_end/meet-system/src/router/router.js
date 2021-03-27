@@ -54,4 +54,19 @@ const router = new VueRouter({
     ]
 })
 
+router.beforeEach((to, from, next) => {
+    let id = localStorage.getItem("id");
+    if (id != null || to.name == "login" || to.name == "meeting")
+        next();
+    else
+        next({
+            name: 'login'
+        });
+})
+
+const originalPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push(location) {
+    return originalPush.call(this, location).catch(err => err)
+}
+
 export default router

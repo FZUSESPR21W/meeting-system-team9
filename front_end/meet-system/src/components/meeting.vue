@@ -7,16 +7,23 @@
                     <div class="content" :title="title">{{ title }}</div>
                 </div>
             </div>
-            <div class="meeting_item" id="meeting_num">
-                <div>
-                    <div class="title">会议人数</div>
-                    <div class="content">{{ num }}</div>
-                </div>
-            </div>
             <div class="meeting_item" id="meeting_time">
                 <div>
                     <div class="title">会议时间</div>
                     <div class="content">{{ time }}</div>
+                </div>
+            </div>
+            <div
+                class="meeting_item"
+                id="meeting_num"
+                v-loading="!isPower"
+                element-loading-spinner="el-icon-warning-outline"
+                element-loading-text="抱歉, 权限不足!"
+                element-loading-background="#fff"
+            >
+                <div>
+                    <div class="title">会议人数</div>
+                    <div class="content">{{ num }}</div>
                 </div>
             </div>
         </div>
@@ -33,7 +40,15 @@
                 </div>
             </div>
             <div id="meeting_chart">
-                <el-table :data="forum_list" border>
+                <el-table
+                    :data="forum_list"
+                    border
+                    height="100%"
+                    v-loading="!isPower"
+                    element-loading-spinner="el-icon-warning-outline"
+                    element-loading-text="抱歉, 权限不足!"
+                    element-loading-background="#fff"
+                >
                     <el-table-column prop="name" label="论坛名">
                     </el-table-column>
                     <el-table-column prop="num" label="论坛人数">
@@ -50,62 +65,26 @@ export default {
 
     data() {
         return {
-            title: "安居房了是djfsadfasdfhasfdasfhsafhasfhasj巨大",
-            num: 100000,
-            time: "2020/03/27",
-            schema: "了解了解了解了解了据了解李嘉林据了解了解了解了解了解了",
-            detail: "还有还有还有还有还有还有缓一缓",
-            forum_list: [
-                {
-                    name: "王小虎",
-                    num: "上海市普陀区金沙江路 1518 弄",
-                },
-                {
-                    name: "王小虎",
-                    num: "上海市普陀区金沙江路 1518 弄",
-                },
-                {
-                    name: "王小虎",
-                    num: "上海市普陀区金沙江路 1518 弄",
-                },
-                {
-                    name: "王小虎",
-                    num: "上海市普陀区金沙江路 1518 弄",
-                },
-                {
-                    name: "王小虎",
-                    num: "上海市普陀区金沙江路 1518 弄",
-                },
-                {
-                    name: "王小虎",
-                    num: "上海市普陀区金沙江路 1518 弄",
-                },
-                {
-                    name: "王小虎",
-                    num: "上海市普陀区金沙江路 1517 弄",
-                },
-                {
-                    name: "王小虎",
-                    num: "上海市普陀区金沙江路 1519 弄",
-                },
-                {
-                    name: "王小虎",
-                    num: "上海市普陀区金沙江路 1516 弄",
-                },
-            ],
+            isPower: false,
+            title: "",
+            num: 0,
+            time: "",
+            schema: "",
+            detail: "",
+            forum_list: [],
         };
     },
 
     created() {
         this.$axios({
-            method: "",
+            method: "get",
             url: "",
         }).then((re) => {
             console.log(re);
+            // 获取会议相关信息
+            // 判断权限
         });
     },
-
-    methods: {},
 };
 </script>
 
@@ -167,13 +146,13 @@ export default {
 }
 
 #meeting_num {
-    background-image: linear-gradient(to bottom right, #a170f1, #dfbafa);
-    /* background-color: #a170f1; */
+    background-image: linear-gradient(to bottom right, #398af1, #81d4fd);
+    /* background-color: #398af1; */
 }
 
 #meeting_time {
-    background-image: linear-gradient(to bottom right, #398af1, #81d4fd);
-    /* background-color: #398af1; */
+    background-image: linear-gradient(to bottom right, #a170f1, #dfbafa);
+    /* background-color: #a170f1; */
 }
 
 #meeting_detail {
@@ -225,9 +204,5 @@ export default {
     width: 100%;
     max-height: 100%;
     overflow: auto;
-}
-
-.el-table::before {
-    height: 0;
 }
 </style>
