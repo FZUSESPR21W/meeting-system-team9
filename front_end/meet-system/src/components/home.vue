@@ -66,7 +66,6 @@ export default {
             isForum: false,
             isInfo: false,
             isMessage: false,
-            path: this.$route.path,
         };
     },
 
@@ -79,23 +78,21 @@ export default {
     },
 
     watch: {
-        path: {
+        $route: {
             handler(newValue) {
-                let v = newValue.split("/");
-                let value = v[v.length - 1];
-
+                let path = newValue.name;
                 this.isMeeting = false;
                 this.isForum = false;
                 this.isInfo = false;
                 this.isMessage = false;
 
-                if (value == "meeting") {
+                if (path == "meeting") {
                     this.isMeeting = true;
-                } else if (value == "forum") {
+                } else if (path == "forum") {
                     this.isForum = true;
-                } else if (value == "person_info") {
+                } else if (path == "person_info") {
                     this.isInfo = true;
-                } else if (value == "send_message") {
+                } else if (path == "send_message") {
                     this.isMessage = true;
                 }
             },
