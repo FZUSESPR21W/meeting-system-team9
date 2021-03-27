@@ -21,5 +21,13 @@ public class UserService {
 		}
 		return true;
 	}
-	
+	public Boolean sign(User user) {
+		List<User> readData = userDaoImpl.readByKey(new String[] {"userid"},new Object[] {user.getUserid()});
+		if(readData.size()>0) {
+			return false;
+		}
+		
+		userDaoImpl.create(user);
+		return true;
+	}
 }
