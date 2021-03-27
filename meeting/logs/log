@@ -1,0 +1,475 @@
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 20:39:03,385
+INFO:   * Restarting with stat, 2021-03-25 20:39:03,572
+WARNING:   * Debugger is active!, 2021-03-25 20:39:04,531
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 20:39:04,575
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 20:39:04,587
+INFO:  127.0.0.1 - - [25/Mar/2021 20:39:05] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 20:39:05,404
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 20:39:42,046
+INFO:   * Restarting with stat, 2021-03-25 20:39:42,104
+WARNING:   * Debugger is active!, 2021-03-25 20:39:42,961
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 20:39:43,002
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 20:39:43,002
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 20:39:45,372
+INFO:   * Restarting with stat, 2021-03-25 20:39:45,412
+WARNING:   * Debugger is active!, 2021-03-25 20:39:46,344
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 20:39:46,384
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 20:39:46,396
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 20:39:48,790
+INFO:   * Restarting with stat, 2021-03-25 20:39:48,830
+WARNING:   * Debugger is active!, 2021-03-25 20:39:49,686
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 20:39:49,722
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 20:39:49,735
+INFO:  127.0.0.1 - - [25/Mar/2021 20:39:52] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 20:39:52,748
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 20:40:00,398
+INFO:   * Restarting with stat, 2021-03-25 20:40:00,502
+WARNING:   * Debugger is active!, 2021-03-25 20:40:01,851
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 20:40:01,887
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 20:40:01,903
+INFO:  127.0.0.1 - - [25/Mar/2021 20:40:02] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 20:40:02,880
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 20:40:23,304
+INFO:   * Restarting with stat, 2021-03-25 20:40:23,392
+WARNING:   * Debugger is active!, 2021-03-25 20:40:24,741
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 20:40:24,777
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 20:40:24,824
+INFO:  127.0.0.1 - - [25/Mar/2021 20:40:25] "GET /api/pages/tag/line HTTP/1.1" 200 -, 2021-03-25 20:40:25,953
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 20:40:42,572
+INFO:   * Restarting with stat, 2021-03-25 20:40:42,699
+WARNING:   * Debugger is active!, 2021-03-25 20:40:44,182
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 20:40:44,243
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 20:40:44,263
+INFO:  127.0.0.1 - - [25/Mar/2021 20:40:45] "GET /api/pages/tag/line HTTP/1.1" 200 -, 2021-03-25 20:40:45,334
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 20:41:17,855
+INFO:   * Restarting with stat, 2021-03-25 20:41:17,919
+WARNING:   * Debugger is active!, 2021-03-25 20:41:18,812
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 20:41:18,852
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 20:41:18,868
+INFO:  127.0.0.1 - - [25/Mar/2021 21:45:37] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 21:45:37,319
+INFO:  127.0.0.1 - - [25/Mar/2021 21:46:56] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 21:46:56,962
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:47:17,591
+INFO:   * Restarting with stat, 2021-03-25 21:47:17,659
+WARNING:   * Debugger is active!, 2021-03-25 21:47:18,718
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:47:18,766
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:47:18,790
+INFO:  127.0.0.1 - - [25/Mar/2021 21:47:21] "GET /api/pages/tag/line HTTP/1.1" 200 -, 2021-03-25 21:47:21,347
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:50:43,759
+INFO:   * Restarting with stat, 2021-03-25 21:50:43,804
+WARNING:   * Debugger is active!, 2021-03-25 21:50:45,039
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:50:45,070
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:50:45,111
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:50:51,294
+INFO:   * Restarting with stat, 2021-03-25 21:50:51,342
+WARNING:   * Debugger is active!, 2021-03-25 21:50:52,154
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:50:52,186
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:50:52,201
+INFO:  127.0.0.1 - - [25/Mar/2021 21:50:57] "GET /api/pages/tag/line HTTP/1.1" 200 -, 2021-03-25 21:50:57,424
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:51:09,270
+INFO:   * Restarting with stat, 2021-03-25 21:51:09,456
+WARNING:   * Debugger is active!, 2021-03-25 21:51:10,706
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:51:10,754
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:51:10,770
+INFO:  127.0.0.1 - - [25/Mar/2021 21:51:11] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 21:51:11,685
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:51:25,241
+INFO:   * Restarting with stat, 2021-03-25 21:51:25,291
+WARNING:   * Debugger is active!, 2021-03-25 21:51:26,109
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:51:26,140
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:51:26,156
+INFO:  127.0.0.1 - - [25/Mar/2021 21:51:44] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 21:51:44,240
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:51:58,232
+INFO:   * Restarting with stat, 2021-03-25 21:51:58,288
+WARNING:   * Debugger is active!, 2021-03-25 21:51:59,463
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:51:59,519
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:51:59,539
+INFO:  127.0.0.1 - - [25/Mar/2021 21:52:00] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 21:52:00,726
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:53:01,879
+INFO:   * Restarting with stat, 2021-03-25 21:53:01,986
+WARNING:   * Debugger is active!, 2021-03-25 21:53:03,156
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:53:03,196
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:53:03,229
+INFO:  127.0.0.1 - - [25/Mar/2021 21:53:04] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 21:53:04,479
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:53:19,621
+INFO:   * Restarting with stat, 2021-03-25 21:53:19,693
+WARNING:   * Debugger is active!, 2021-03-25 21:53:20,828
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:53:20,892
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:53:20,907
+INFO:  127.0.0.1 - - [25/Mar/2021 21:53:22] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 21:53:22,838
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:53:56,790
+INFO:   * Restarting with stat, 2021-03-25 21:53:57,072
+WARNING:   * Debugger is active!, 2021-03-25 21:53:58,203
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:53:58,240
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:53:58,252
+INFO:  127.0.0.1 - - [25/Mar/2021 21:53:59] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 21:53:59,449
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:54:08,712
+INFO:   * Restarting with stat, 2021-03-25 21:54:08,768
+WARNING:   * Debugger is active!, 2021-03-25 21:54:09,580
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:54:09,612
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:54:09,628
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:55:57,640
+INFO:   * Restarting with stat, 2021-03-25 21:55:57,691
+WARNING:   * Debugger is active!, 2021-03-25 21:55:58,942
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:55:59,010
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:55:59,026
+INFO:  127.0.0.1 - - [25/Mar/2021 21:55:59] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 21:55:59,900
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:56:12,932
+INFO:   * Restarting with stat, 2021-03-25 21:56:13,059
+WARNING:   * Debugger is active!, 2021-03-25 21:56:14,175
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:56:14,215
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:56:14,227
+INFO:  127.0.0.1 - - [25/Mar/2021 21:56:15] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 21:56:15,509
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:56:30,764
+INFO:   * Restarting with stat, 2021-03-25 21:56:30,893
+WARNING:   * Debugger is active!, 2021-03-25 21:56:31,883
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:56:31,920
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:56:31,932
+INFO:  127.0.0.1 - - [25/Mar/2021 21:56:33] "GET /api/pages/tag/line HTTP/1.1" 200 -, 2021-03-25 21:56:33,244
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:56:58,424
+INFO:   * Restarting with stat, 2021-03-25 21:56:58,482
+WARNING:   * Debugger is active!, 2021-03-25 21:56:59,623
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:56:59,663
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:56:59,679
+INFO:  127.0.0.1 - - [25/Mar/2021 21:57:00] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 21:57:00,995
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:57:11,407
+INFO:   * Restarting with stat, 2021-03-25 21:57:11,474
+WARNING:   * Debugger is active!, 2021-03-25 21:57:12,381
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:57:12,418
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:57:12,434
+INFO:  127.0.0.1 - - [25/Mar/2021 21:57:15] "GET /api/pages/tag/line HTTP/1.1" 200 -, 2021-03-25 21:57:15,221
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:57:26,454
+INFO:   * Restarting with stat, 2021-03-25 21:57:26,500
+WARNING:   * Debugger is active!, 2021-03-25 21:57:27,320
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:57:27,353
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:57:27,368
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 21:57:43,324
+INFO:   * Restarting with stat, 2021-03-25 21:57:43,392
+WARNING:   * Debugger is active!, 2021-03-25 21:57:44,314
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 21:57:44,362
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 21:57:44,362
+INFO:  127.0.0.1 - - [25/Mar/2021 22:09:44] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 22:09:44,659
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:15:57,475
+INFO:   * Restarting with stat, 2021-03-25 22:15:57,556
+WARNING:   * Debugger is active!, 2021-03-25 22:15:58,492
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:15:58,538
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:15:58,554
+INFO:  127.0.0.1 - - [25/Mar/2021 22:16:00] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 22:16:00,845
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:16:12,579
+INFO:   * Restarting with stat, 2021-03-25 22:16:12,706
+WARNING:   * Debugger is active!, 2021-03-25 22:16:13,676
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:16:13,717
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:16:13,731
+INFO:  127.0.0.1 - - [25/Mar/2021 22:16:14] "GET /api/pages/tag/line HTTP/1.1" 200 -, 2021-03-25 22:16:14,978
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:16:45,955
+INFO:   * Restarting with stat, 2021-03-25 22:16:46,003
+INFO:   * Restarting with stat, 2021-03-25 22:17:54,727
+WARNING:   * Debugger is active!, 2021-03-25 22:17:55,690
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:17:55,746
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:17:55,762
+INFO:  127.0.0.1 - - [25/Mar/2021 22:18:00] "GET /api/pages/tag/line HTTP/1.1" 200 -, 2021-03-25 22:18:00,293
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:18:51,918
+INFO:   * Restarting with stat, 2021-03-25 22:18:51,957
+WARNING:   * Debugger is active!, 2021-03-25 22:18:52,780
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:18:52,814
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:18:52,827
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:18:56,303
+INFO:   * Restarting with stat, 2021-03-25 22:18:56,340
+WARNING:   * Debugger is active!, 2021-03-25 22:18:57,191
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:18:57,226
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:18:57,239
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:19:00,711
+INFO:   * Restarting with stat, 2021-03-25 22:19:00,745
+WARNING:   * Debugger is active!, 2021-03-25 22:19:01,558
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:19:01,589
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:19:01,609
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:19:07,378
+INFO:   * Restarting with stat, 2021-03-25 22:19:07,413
+WARNING:   * Debugger is active!, 2021-03-25 22:19:08,309
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:19:08,346
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:19:08,360
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:19:24,213
+INFO:   * Restarting with stat, 2021-03-25 22:19:24,250
+WARNING:   * Debugger is active!, 2021-03-25 22:19:25,092
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:19:25,126
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:19:25,139
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:19:35,335
+INFO:   * Restarting with stat, 2021-03-25 22:19:35,373
+WARNING:   * Debugger is active!, 2021-03-25 22:19:36,213
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:19:36,247
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:19:36,261
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:19:45,330
+INFO:   * Restarting with stat, 2021-03-25 22:19:45,385
+WARNING:   * Debugger is active!, 2021-03-25 22:19:46,206
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:19:46,242
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:19:46,256
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:19:50,840
+INFO:   * Restarting with stat, 2021-03-25 22:19:50,882
+WARNING:   * Debugger is active!, 2021-03-25 22:19:51,691
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:19:51,726
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:19:51,739
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:19:56,330
+INFO:   * Restarting with stat, 2021-03-25 22:19:56,370
+WARNING:   * Debugger is active!, 2021-03-25 22:19:57,205
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:19:57,240
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:19:57,253
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:20:01,846
+INFO:   * Restarting with stat, 2021-03-25 22:20:01,882
+WARNING:   * Debugger is active!, 2021-03-25 22:20:02,705
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:20:02,739
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:20:02,754
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:20:32,012
+INFO:   * Restarting with stat, 2021-03-25 22:20:32,051
+WARNING:   * Debugger is active!, 2021-03-25 22:20:32,884
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:20:32,920
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:20:32,933
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:20:54,332
+INFO:   * Restarting with stat, 2021-03-25 22:20:54,370
+WARNING:   * Debugger is active!, 2021-03-25 22:20:55,187
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:20:55,225
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:20:55,238
+INFO:  127.0.0.1 - - [25/Mar/2021 22:20:59] "GET /api/pages/tag/line HTTP/1.1" 500 -, 2021-03-25 22:20:59,087
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:21:24,992
+INFO:   * Restarting with stat, 2021-03-25 22:21:25,120
+WARNING:   * Debugger is active!, 2021-03-25 22:21:26,093
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:21:26,134
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:21:26,149
+INFO:  127.0.0.1 - - [25/Mar/2021 22:21:28] "GET /api/pages/tag/line HTTP/1.1" 200 -, 2021-03-25 22:21:28,138
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:21:45,617
+INFO:   * Restarting with stat, 2021-03-25 22:21:45,691
+WARNING:   * Debugger is active!, 2021-03-25 22:21:46,714
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:21:46,748
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:21:46,762
+INFO:  127.0.0.1 - - [25/Mar/2021 22:21:48] "GET /api/pages/tag/line HTTP/1.1" 200 -, 2021-03-25 22:21:48,967
+INFO:  127.0.0.1 - - [25/Mar/2021 22:23:06] "GET /api/pages/tag/radar HTTP/1.1" 500 -, 2021-03-25 22:23:06,951
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:24:01,257
+INFO:   * Restarting with stat, 2021-03-25 22:24:01,306
+WARNING:   * Debugger is active!, 2021-03-25 22:24:02,118
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:24:02,159
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:24:02,174
+INFO:  127.0.0.1 - - [25/Mar/2021 22:24:05] "GET /api/pages/tag/radar HTTP/1.1" 500 -, 2021-03-25 22:24:05,046
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:24:34,152
+INFO:   * Restarting with stat, 2021-03-25 22:24:34,186
+WARNING:   * Debugger is active!, 2021-03-25 22:24:35,022
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:24:35,061
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:24:35,074
+INFO:  127.0.0.1 - - [25/Mar/2021 22:24:39] "GET /api/pages/tag/radar HTTP/1.1" 500 -, 2021-03-25 22:24:39,961
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:24:55,558
+INFO:   * Restarting with stat, 2021-03-25 22:24:55,589
+WARNING:   * Debugger is active!, 2021-03-25 22:24:56,424
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:24:56,444
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:24:56,460
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:25:10,018
+INFO:   * Restarting with stat, 2021-03-25 22:25:10,078
+WARNING:   * Debugger is active!, 2021-03-25 22:25:11,020
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:25:11,054
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:25:11,054
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:25:16,787
+INFO:   * Restarting with stat, 2021-03-25 22:25:16,840
+WARNING:   * Debugger is active!, 2021-03-25 22:25:17,727
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:25:17,770
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:25:17,784
+INFO:  127.0.0.1 - - [25/Mar/2021 22:25:19] "GET /api/pages/tag/radar HTTP/1.1" 500 -, 2021-03-25 22:25:19,733
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:25:37,334
+INFO:   * Restarting with stat, 2021-03-25 22:25:37,392
+WARNING:   * Debugger is active!, 2021-03-25 22:25:38,372
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:25:38,407
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:25:38,420
+INFO:  127.0.0.1 - - [25/Mar/2021 22:25:39] "GET /api/pages/tag/radar HTTP/1.1" 500 -, 2021-03-25 22:25:39,744
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:26:27,405
+INFO:   * Restarting with stat, 2021-03-25 22:26:27,451
+WARNING:   * Debugger is active!, 2021-03-25 22:26:28,386
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:26:28,421
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:26:28,435
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:26:55,474
+INFO:   * Restarting with stat, 2021-03-25 22:26:55,507
+WARNING:   * Debugger is active!, 2021-03-25 22:26:56,336
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:26:56,367
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:26:56,383
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:27:16,668
+INFO:   * Restarting with stat, 2021-03-25 22:27:16,711
+WARNING:   * Debugger is active!, 2021-03-25 22:27:17,750
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:27:17,790
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:27:17,805
+INFO:  127.0.0.1 - - [25/Mar/2021 22:27:19] "GET /api/pages/tag/radar HTTP/1.1" 500 -, 2021-03-25 22:27:19,822
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:36:13,007
+INFO:   * Restarting with stat, 2021-03-25 22:36:13,067
+WARNING:   * Debugger is active!, 2021-03-25 22:36:14,069
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:36:14,117
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:36:14,133
+INFO:  127.0.0.1 - - [25/Mar/2021 22:36:17] "GET /api/pages/tag/radar HTTP/1.1" 200 -, 2021-03-25 22:36:17,285
+INFO:   * Detected change in 'D:\\软件工程实践\\third\\PairProject\\fine\\back_end\\whichpage\\app\\pages\\view.py', reloading, 2021-03-25 22:37:51,428
+INFO:   * Restarting with stat, 2021-03-25 22:37:51,477
+WARNING:   * Debugger is active!, 2021-03-25 22:37:52,611
+INFO:   * Debugger PIN: 125-469-069, 2021-03-25 22:37:52,646
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-25 22:37:52,660
+INFO:  127.0.0.1 - - [25/Mar/2021 22:37:55] "GET /api/pages/tag/radar HTTP/1.1" 200 -, 2021-03-25 22:37:55,001
+INFO:   * Restarting with stat, 2021-03-27 21:50:45,396
+WARNING:   * Debugger is active!, 2021-03-27 21:50:47,202
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 21:50:47,275
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 21:50:47,328
+INFO:  127.0.0.1 - - [27/Mar/2021 21:51:05] "GET /api/pages/forum HTTP/1.1" 200 -, 2021-03-27 21:51:05,552
+INFO:   * Restarting with stat, 2021-03-27 22:04:17,435
+WARNING:   * Debugger is active!, 2021-03-27 22:04:19,412
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:04:19,461
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:04:19,492
+INFO:  127.0.0.1 - - [27/Mar/2021 22:05:26] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:05:26,259
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:05:38,146
+INFO:   * Restarting with stat, 2021-03-27 22:05:38,216
+WARNING:   * Debugger is active!, 2021-03-27 22:05:40,376
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:05:40,432
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:05:40,462
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:05:46,968
+INFO:   * Restarting with stat, 2021-03-27 22:05:47,135
+WARNING:   * Debugger is active!, 2021-03-27 22:05:49,288
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:05:49,346
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:05:49,373
+INFO:  127.0.0.1 - - [27/Mar/2021 22:05:52] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:05:52,428
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:06:16,742
+INFO:   * Restarting with stat, 2021-03-27 22:06:16,840
+WARNING:   * Debugger is active!, 2021-03-27 22:06:18,952
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:06:19,010
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:06:19,041
+INFO:  127.0.0.1 - - [27/Mar/2021 22:06:19] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:06:19,997
+INFO:  127.0.0.1 - - [27/Mar/2021 22:06:36] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:06:36,024
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:07:06,304
+INFO:   * Restarting with stat, 2021-03-27 22:07:06,391
+WARNING:   * Debugger is active!, 2021-03-27 22:07:08,348
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:07:08,406
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:07:08,434
+INFO:  127.0.0.1 - - [27/Mar/2021 22:07:09] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:07:09,322
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:07:19,096
+INFO:   * Restarting with stat, 2021-03-27 22:07:19,251
+WARNING:   * Debugger is active!, 2021-03-27 22:07:21,334
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:07:21,391
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:07:21,419
+INFO:  127.0.0.1 - - [27/Mar/2021 22:07:23] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:07:23,365
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:07:46,577
+INFO:   * Restarting with stat, 2021-03-27 22:07:46,646
+WARNING:   * Debugger is active!, 2021-03-27 22:07:48,387
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:07:48,444
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:07:48,472
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:08:06,331
+INFO:   * Restarting with stat, 2021-03-27 22:08:06,396
+WARNING:   * Debugger is active!, 2021-03-27 22:08:08,198
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:08:08,258
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:08:08,286
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:08:11,041
+INFO:   * Restarting with stat, 2021-03-27 22:08:11,103
+WARNING:   * Debugger is active!, 2021-03-27 22:08:12,897
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:08:12,954
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:08:12,983
+INFO:  127.0.0.1 - - [27/Mar/2021 22:08:17] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:08:17,412
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:08:32,664
+INFO:   * Restarting with stat, 2021-03-27 22:08:32,726
+WARNING:   * Debugger is active!, 2021-03-27 22:08:34,733
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:08:34,783
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:08:34,814
+INFO:  127.0.0.1 - - [27/Mar/2021 22:08:36] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:08:36,481
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:08:46,769
+INFO:   * Restarting with stat, 2021-03-27 22:08:46,843
+WARNING:   * Debugger is active!, 2021-03-27 22:08:48,758
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:08:48,815
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:08:48,844
+INFO:  127.0.0.1 - - [27/Mar/2021 22:08:49] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:08:49,799
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:08:54,438
+INFO:   * Restarting with stat, 2021-03-27 22:08:54,626
+WARNING:   * Debugger is active!, 2021-03-27 22:08:56,925
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:08:56,990
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:08:57,018
+INFO:  127.0.0.1 - - [27/Mar/2021 22:08:58] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:08:58,259
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:09:16,904
+INFO:   * Restarting with stat, 2021-03-27 22:09:16,973
+WARNING:   * Debugger is active!, 2021-03-27 22:09:18,831
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:09:18,902
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:09:18,928
+INFO:  127.0.0.1 - - [27/Mar/2021 22:09:21] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:09:21,994
+INFO:  127.0.0.1 - - [27/Mar/2021 22:09:48] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:09:48,144
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:10:06,306
+INFO:   * Restarting with stat, 2021-03-27 22:10:06,410
+WARNING:   * Debugger is active!, 2021-03-27 22:10:08,457
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:10:08,512
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:10:08,539
+INFO:  127.0.0.1 - - [27/Mar/2021 22:10:09] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:10:09,923
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:10:19,497
+INFO:   * Restarting with stat, 2021-03-27 22:10:19,588
+WARNING:   * Debugger is active!, 2021-03-27 22:10:21,701
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:10:21,759
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:10:21,786
+INFO:  127.0.0.1 - - [27/Mar/2021 22:10:22] "POST /api/pages/register HTTP/1.1" 500 -, 2021-03-27 22:10:22,868
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:10:48,160
+INFO:   * Restarting with stat, 2021-03-27 22:10:48,258
+WARNING:   * Debugger is active!, 2021-03-27 22:10:50,725
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:10:50,796
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:10:50,832
+INFO:  127.0.0.1 - - [27/Mar/2021 22:10:52] "POST /api/pages/register HTTP/1.1" 200 -, 2021-03-27 22:10:52,224
+INFO:  127.0.0.1 - - [27/Mar/2021 22:11:56] "POST /api/pages/register HTTP/1.1" 200 -, 2021-03-27 22:11:56,146
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:13:01,906
+INFO:   * Restarting with stat, 2021-03-27 22:13:01,990
+WARNING:   * Debugger is active!, 2021-03-27 22:13:03,910
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:13:03,967
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:13:03,981
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:13:14,362
+INFO:   * Restarting with stat, 2021-03-27 22:13:14,454
+WARNING:   * Debugger is active!, 2021-03-27 22:13:16,394
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:13:16,456
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:13:16,487
+INFO:  127.0.0.1 - - [27/Mar/2021 22:13:41] "POST /api/pages/register HTTP/1.1" 200 -, 2021-03-27 22:13:41,679
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:14:06,814
+INFO:   * Restarting with stat, 2021-03-27 22:14:06,893
+WARNING:   * Debugger is active!, 2021-03-27 22:14:08,664
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:14:08,722
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:14:08,750
+INFO:  127.0.0.1 - - [27/Mar/2021 22:14:25] "POST /api/pages/login HTTP/1.1" 200 -, 2021-03-27 22:14:25,857
+INFO:   * Restarting with stat, 2021-03-27 22:30:53,506
+WARNING:   * Debugger is active!, 2021-03-27 22:30:55,428
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:30:55,492
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:30:55,526
+INFO:  127.0.0.1 - - [27/Mar/2021 22:31:03] "GET /api/pages/meeting HTTP/1.1" 200 -, 2021-03-27 22:31:03,387
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 22:31:25,447
+INFO:   * Restarting with stat, 2021-03-27 22:31:25,547
+WARNING:   * Debugger is active!, 2021-03-27 22:31:27,658
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:31:27,718
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:31:27,760
+INFO:  127.0.0.1 - - [27/Mar/2021 22:31:29] "GET /api/pages/meeting HTTP/1.1" 200 -, 2021-03-27 22:31:29,097
+INFO:   * Restarting with stat, 2021-03-27 22:34:55,819
+WARNING:   * Debugger is active!, 2021-03-27 22:34:57,813
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:34:57,868
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:34:57,897
+INFO:  127.0.0.1 - - [27/Mar/2021 22:35:00] "GET /api/pages/meeting HTTP/1.1" 200 -, 2021-03-27 22:35:00,709
+INFO:   * Restarting with stat, 2021-03-27 22:47:28,546
+WARNING:   * Debugger is active!, 2021-03-27 22:47:30,623
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 22:47:30,698
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 22:47:30,731
+INFO:  127.0.0.1 - - [27/Mar/2021 22:50:16] "POST /api/pages/insert HTTP/1.1" 200 -, 2021-03-27 22:50:16,472
+INFO:   * Restarting with stat, 2021-03-27 23:11:10,118
+WARNING:   * Debugger is active!, 2021-03-27 23:11:12,120
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 23:11:12,188
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 23:11:12,235
+INFO:  127.0.0.1 - - [27/Mar/2021 23:11:56] "POST /api/pages/person HTTP/1.1" 500 -, 2021-03-27 23:11:56,106
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 23:12:25,686
+INFO:   * Restarting with stat, 2021-03-27 23:12:25,860
+WARNING:   * Debugger is active!, 2021-03-27 23:12:28,012
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 23:12:28,069
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 23:12:28,099
+INFO:  127.0.0.1 - - [27/Mar/2021 23:12:29] "POST /api/pages/person HTTP/1.1" 200 -, 2021-03-27 23:12:29,375
+INFO:   * Restarting with stat, 2021-03-27 23:35:39,612
+WARNING:   * Debugger is active!, 2021-03-27 23:35:41,385
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 23:35:41,455
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 23:35:41,485
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 23:36:03,136
+INFO:   * Restarting with stat, 2021-03-27 23:36:03,216
+WARNING:   * Debugger is active!, 2021-03-27 23:36:05,292
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 23:36:05,362
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 23:36:05,392
+INFO:  127.0.0.1 - - [27/Mar/2021 23:36:34] "GET /api/pages/person/1 HTTP/1.1" 200 -, 2021-03-27 23:36:34,867
+INFO:  127.0.0.1 - - [27/Mar/2021 23:36:41] "GET /api/pages/message/1 HTTP/1.1" 500 -, 2021-03-27 23:36:41,809
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 23:36:52,718
+INFO:   * Restarting with stat, 2021-03-27 23:36:52,787
+WARNING:   * Debugger is active!, 2021-03-27 23:36:54,879
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 23:36:54,950
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 23:36:54,980
+INFO:  127.0.0.1 - - [27/Mar/2021 23:36:56] "GET /api/pages/message/1 HTTP/1.1" 500 -, 2021-03-27 23:36:56,229
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 23:37:13,737
+INFO:   * Restarting with stat, 2021-03-27 23:37:13,833
+WARNING:   * Debugger is active!, 2021-03-27 23:37:15,738
+INFO:   * Debugger PIN: 125-469-069, 2021-03-27 23:37:15,813
+INFO:   * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit), 2021-03-27 23:37:15,844
+INFO:  127.0.0.1 - - [27/Mar/2021 23:37:17] "GET /api/pages/message/1 HTTP/1.1" 200 -, 2021-03-27 23:37:17,018
+INFO:   * Detected change in 'D:\\软件工程实践\\test\\whichpage\\app\\pages\\view.py', reloading, 2021-03-27 23:37:30,325
+INFO:   * Restarting with stat, 2021-03-27 23:37:30,388
