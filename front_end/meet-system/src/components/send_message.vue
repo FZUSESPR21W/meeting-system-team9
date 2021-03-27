@@ -1,8 +1,8 @@
 <template>
     <div id="send_message">
         <div id="message_part">
-            <el-form label-position="right" label-width="100px">
-                <el-form-item label="题目:">
+            <el-form label-position="right" label-width="150px">
+                <el-form-item label="题目:" required="“true”">
                     <el-input
                         class="title"
                         v-model="title"
@@ -10,7 +10,7 @@
                         clearable
                     ></el-input>
                 </el-form-item>
-                <el-form-item label="发布到:">
+                <el-form-item label="发布到:" required="“true”">
                     <el-select v-model="forum" placeholder="请选择">
                         <el-option
                             v-for="item in options"
@@ -22,7 +22,7 @@
                     </el-select>
                 </el-form-item>
 
-                <el-form-item label="发布内容:">
+                <el-form-item label="发布内容:" required="“true”">
                     <el-input
                         type="textarea"
                         :autosize="{ minRows: 10, maxRows: 8 }"
@@ -32,7 +32,7 @@
                     >
                     </el-input>
                 </el-form-item>
-                <el-form-item label="发布日期:">
+                <el-form-item label="发布日期:" required="“true”">
                     <el-date-picker
                         v-model="date"
                         type="date"
@@ -48,20 +48,102 @@
 
 <script>
 export default {
-    name: "Send_message",
-
     data() {
         return {
             title: "",
             forum: "",
+            options: [
+                {
+                    value: "选项1",
+                    label: "黄金糕",
+                },
+                {
+                    value: "选项2",
+                    label: "双皮奶",
+                },
+                {
+                    value: "选项3",
+                    label: "蚵仔煎",
+                },
+                {
+                    value: "选项4",
+                    label: "龙须面",
+                },
+                {
+                    value: "选项5",
+                    label: "北京烤鸭",
+                },
+            ],
             detail: "",
             date: "",
         };
     },
 
+    created() {
+        //加载是向后端发送请求获取数据
+        this.$axios({
+            method: "get",
+            url: "",
+        }).then((re) => {
+            console.log(re);
+        });
+    },
+
     methods: {
         go_forum() {
-            this.$router.push({ name: "forum" });
+            if (!this.title) {
+                this.$notify({
+                    title: "警告",
+                    message: "请输入题目",
+                    type: "warning",
+                    showClose: false,
+                });
+                return;
+            }
+
+            if (!this.forum) {
+                this.$notify({
+                    title: "警告",
+                    message: "请选择论坛",
+                    type: "warning",
+                    showClose: false,
+                });
+                return;
+            }
+
+            if (!this.detail) {
+                this.$notify({
+                    title: "警告",
+                    message: "请输入内容",
+                    type: "warning",
+                    showClose: false,
+                });
+                return;
+            }
+
+            if (!this.date) {
+                this.$notify({
+                    title: "警告",
+                    message: "请选择发布日期",
+                    type: "warning",
+                    showClose: false,
+                });
+                return;
+            }
+
+            let data = {
+                title: this.title, //后端关联表格（表头：变量名）
+            };
+
+            this.$axios({
+                //传数据给后端
+                method: "post",
+                url: "",
+                data: data,
+            }).then((re) => {
+                console.log(re);
+                this.$router.push({ name: "forum" });
+            });
         },
     },
 };
@@ -93,7 +175,8 @@ export default {
 .el-button {
     border-radius: 10px;
     text-align: center;
-    margin: 5% 13%;
+    margin-left: 18%;
+    margin-top: 5%;
 }
 
 .el-form-item {
