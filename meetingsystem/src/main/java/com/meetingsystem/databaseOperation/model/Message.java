@@ -14,9 +14,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Message {
     private String id;
-    private String userId;
-    private String forumId;
+    private String userid;
+    private String forumid;
     private String time;
+    private String title;
     private String content;
 
     public String getId() {
@@ -27,21 +28,7 @@ public class Message {
         this.id = id;
     }
 
-    public String getUserId() {
-        return userId;
-    }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-
-    public String getForumId() {
-        return forumId;
-    }
-
-    public void setForumId(String forumId) {
-        this.forumId = forumId;
-    }
 
     public String getTime() {
         return time;
@@ -57,5 +44,29 @@ public class Message {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid;
+    }
+
+    public String getForumid() {
+        return forumid;
+    }
+
+    public void setForumid(String forumid) {
+        this.forumid = forumid;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

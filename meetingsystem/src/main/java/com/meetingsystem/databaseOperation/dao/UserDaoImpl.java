@@ -13,7 +13,7 @@ public class UserDaoImpl implements BaseCURD<User>{
     @Override
     public int create(User dataClass) {
         String sql="insert into user(userId,password,role) values(?,?,?)";
-        Object[] paramsValue={dataClass.getUserId(), dataClass.getPassword(), dataClass.getRole()};
+        Object[] paramsValue={dataClass.getUserid(), dataClass.getPassword(), dataClass.getRole()};
         baseDao.update(sql,paramsValue);
         return -1;
     }
