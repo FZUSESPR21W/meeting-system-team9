@@ -124,10 +124,47 @@ export default {
     },
 
     created() {
-
+        getForums();
+        initPersonInfo();
     },
 
     methods: {
+
+        initPersonInfo() {
+            this.$axios({
+                method:'get',
+                url: '',
+            })
+            .then(res => {
+                if (res.code == 200) {
+                    this.tableData = res.data;
+                } else {
+                    tipInfo('好像哪里出了点问题','error');
+                }
+            })
+            .catch( err => {
+                console.log(err);
+            }) 
+        },
+
+        getForums() {
+            this.$axios({
+                method:'get',
+                url: '',
+            })
+            .then(res => {
+                if (res.code == 200) {
+                    this.forums = res.data;
+                } else {
+                    tipInfo('好像哪里出了点问题','error');
+                }
+            })
+            .catch( err => {
+                console.log(err);
+            }) 
+        },
+
+
         getTableByForum(val="") {
             if (val.trim() ==  "") {
                 console.log('获取全部');

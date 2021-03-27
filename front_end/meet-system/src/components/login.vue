@@ -26,9 +26,9 @@
                         <el-select v-model="forumsValue" multiple placeholder="请选择感兴趣论坛">
                             <el-option
                                 v-for="item in forums"
-                                :key="item.value"
-                                :label="item.label"
-                                :value="item.value">
+                                :key="item.id"
+                                :label="item.name"
+                                :value="item.name">
                             </el-option>
                         </el-select>
 					</div>
@@ -64,25 +64,52 @@ export default {
             username: '',
             password: '',
             forums: [{
-                value: '1',
-                label: '论坛1'
+                id: '1',
+                name: '论坛1'
             }, {
-                value: '2',
-                label: '论坛2'
+                id: '2',
+                name: '论坛2'
             }, {
-                value: '3',
-                label: '论坛3'
+                id: '3',
+                name: '论坛3'
             }, {
-                value: '4',
-                label: '论坛4'
+                id: '4',
+                name: '论坛4'
             }, {
-                value: '5',
-                label: '论坛5'
+                id: '5',
+                name: '论坛5'
             }],
             forumsValue: [],
         }
     },
+    created() {
+        this.getForums()
+    },
     methods: {
+        getForums() {
+            this.$axios({
+                method:'get',
+                url: '',
+            })
+            .then(res => {
+                if (res.code == 200) {
+                    this.forums = res.data;
+                } else {
+                    tipInfo('好像哪里出了点问题','error');
+                }
+            })
+            .catch( err => {
+                console.log(err);
+            }) 
+        },
+
+        tipInfo(info, type) {
+            this.$message({
+                message: info,
+                type: type
+            });
+        },
+        
         changeType() {
             this.isLogin = !this.isLogin
             this.username = ''
@@ -90,72 +117,62 @@ export default {
         },
         login() {
             console.log('我是登录');
-            console.log(this.username);
-            console.log(this.password);
+            this.$axios({
+                method:'post',
+                url: '',
+                data: {
+                    username: this.username, 
+                    password: this.password,
+                }
+            })
+            .then(res => {
+                if (res.code == 200) {
+                    localStorage.setItem('id', res.id);
+                    localStorage.setItem('username', res.username)
+                    localStorage.setItem('role', res.role);
+                    tipInfo('登陆成功！','success');
+                    setTimeout(() => {
+                        this.$router.push({name: 'meeting'});
+                    },2000);
+                } else {
+                    tipInfo('用户名密码错误！','error');
+                }
+            })
+            .catch( err => {
+                console.log(err);
+            })
             
-            // const self = this;
-            // if (self.form.useremail != "" && self.form.userpwd != "") {
-            //     self.$axios({
-            //         method:'post',
-            //         url: 'http://127.0.0.1:10520/api/user/login',
-            //         data: {
-            //             email: self.form.useremail,
-            //             password: self.form.userpwd
-            //         }
-            //     })
-            //     .then( res => {
-            //         switch(res.data){
-            //             case 0: 
-            //                 alert("登陆成功！");
-            //                 break;
-            //             case -1:
-            //                 this.emailError = true;
-            //                 break;
-            //             case 1:
-            //                 this.passwordError = true;
-            //                 break;
-            //         }
-            //     })
-            //     .catch( err => {
-            //         console.log(err);
-            //     })
-            // } else{
-            //     alert("填写不能为空！");
-            // }
         },
         register(){
             console.log('我是注册');
             console.log(this.username);
             console.log(this.password);
             console.log(this.forumsValue);
-            // const self = this;
-            // if(self.form.username != "" && self.form.useremail != "" && self.form.userpwd != ""){
-            //     self.$axios({
-            //         method:'post',
-            //         url: 'http://127.0.0.1:10520/api/user/add',
-            //         data: {
-            //             username: self.form.username,
-            //             email: self.form.useremail,
-            //             password: self.form.userpwd
-            //         }
-            //     })
-            //     .then( res => {
-            //         switch(res.data){
-            //             case 0:
-            //                 alert("注册成功！");
-            //                 this.login();
-            //                 break;
-            //             case -1:
-            //                 this.existed = true;
-            //                 break;
-            //         }
-            //     })
-            //     .catch( err => {
-            //         console.log(err);
-            //     })
-            // } else {
-            //     alert("填写不能为空！");
-            // }
+            this.$axios({
+                method:'post',
+                url: '',
+                data: {
+                    username: this.username, 
+                    password: this.password,
+                    forums: this.forumsValue
+                }
+            })
+            .then(res => {
+                if (res.code == 200) {
+                    localStorage.setItem('id', res.id);
+                    localStorage.setItem('username', res.username)
+                    localStorage.setItem('role', res.role);
+                    tipInfo('注册成功！','success');
+                    setTimeout(() => {
+                        this.$router.push({name: 'meeting'});
+                    },2000);
+                } else {
+                    tipInfo('注册失败（可能原因：用户名已被占用）','error');
+                }
+            })
+            .catch( err => {
+                console.log(err);
+            })
         }
     },
 };
