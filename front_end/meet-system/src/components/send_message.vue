@@ -14,9 +14,9 @@
                     <el-select v-model="forum" placeholder="请选择">
                         <el-option
                             v-for="item in options"
-                            :key="item.value"
-                            :label="item.label"
-                            :value="item.value"
+                            :key="item.id"
+                            :label="item.name"
+                            :value="item.id"
                         >
                         </el-option>
                     </el-select>
@@ -36,6 +36,8 @@
                     <el-date-picker
                         v-model="date"
                         type="date"
+                        format="yyyy/MM/dd"
+                        value-format="yyyy/MM/dd"
                         placeholder="选择日期"
                     >
                     </el-date-picker>
@@ -54,24 +56,24 @@ export default {
             forum: "",
             options: [
                 {
-                    value: "选项1",
-                    label: "黄金糕",
+                    id: "1",
+                    name: "论坛1",
                 },
                 {
-                    value: "选项2",
-                    label: "双皮奶",
+                    id: "2",
+                    name: "论坛2",
                 },
                 {
-                    value: "选项3",
-                    label: "蚵仔煎",
+                    id: "3",
+                    name: "论坛3",
                 },
                 {
-                    value: "选项4",
-                    label: "龙须面",
+                    id: "4",
+                    name: "论坛4",
                 },
                 {
-                    value: "选项5",
-                    label: "北京烤鸭",
+                    id: "5",
+                    name: "论坛5",
                 },
             ],
             detail: "",
@@ -83,9 +85,9 @@ export default {
         //加载是向后端发送请求获取数据
         this.$axios({
             method: "get",
-            url: "",
+            url: "/forum",
         }).then((re) => {
-            console.log(re);
+            this.options = re.data.data;
         });
     },
 
@@ -133,16 +135,26 @@ export default {
 
             let data = {
                 title: this.title, //后端关联表格（表头：变量名）
+                user_id: localStorage.getItem("id"),
+                forum_id: this.forum,
+                content: this.detail,
+                date: this.date,
             };
 
             this.$axios({
                 //传数据给后端
                 method: "post",
-                url: "",
+                url: "/insert",
                 data: data,
             }).then((re) => {
                 console.log(re);
-                this.$router.push({ name: "forum" });
+                this.$message({
+                    message: "发布成功",
+                    type: "success",
+                });
+                setTimeout(() => {
+                    this.$router.push({ name: "forum" });
+                }, 2000);
             });
         },
     },

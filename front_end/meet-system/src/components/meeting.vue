@@ -51,7 +51,7 @@
                 >
                     <el-table-column prop="name" label="论坛名">
                     </el-table-column>
-                    <el-table-column prop="num" label="论坛人数">
+                    <el-table-column prop="count" label="论坛人数">
                     </el-table-column>
                 </el-table>
             </div>
@@ -76,11 +76,23 @@ export default {
     },
 
     created() {
+        if(localStorage.getItem("role") == "用户") {
+            this.isPower = false;
+        } else {
+            this.isPower = true;
+        }
+
         this.$axios({
             method: "get",
-            url: "",
-        }).then((re) => {
-            console.log(re);
+            url: "/meeting",
+        }).then((res) => {
+            this.title = res.data.data.title,
+            this.num = res.data.data.num,
+            this.time = res.data.data.time,
+            this.schema = res.data.data.name,
+            this.detail = res.data.data.agenda,
+            this.forum_list = res.data.data.list,
+            console.log(res);
             // 获取会议相关信息
             // 判断权限
         });

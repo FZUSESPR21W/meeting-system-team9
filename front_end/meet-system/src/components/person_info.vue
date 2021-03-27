@@ -6,25 +6,21 @@
         </div>
         <div class="choose">
             <div class="choose-select">
-                <el-select :inline="true" v-model="forumsValue" clearable placeholder="请选择" @change="getTableByForum">
+                <el-select
+                    :inline="true"
+                    v-model="forumsValue"
+                    clearable
+                    placeholder="请选择"
+                    @change="getTableByForum"
+                >
                     <el-option
                         v-for="item in forums"
                         :key="item.id"
                         :label="item.name"
-                        :value="item.name">
+                        :value="item.id"
+                    >
                     </el-option>
                 </el-select>
-            </div>
-            <div class="choose-search">
-                <el-input
-                    :inline="true"
-                    placeholder="请输入内容"
-                    v-model="searchInfo"
-                    clearable>
-                </el-input> 
-            </div>
-            <div class="choose-button">
-                <el-button type="primary" icon="el-icon-search" circle></el-button>
             </div>
         </div>
         <div class="person-table">
@@ -32,20 +28,13 @@
                 :data="tableData"
                 border
                 max-height="450"
-                style="width: 100%">
-                <el-table-column
-                    prop="id"
-                    label="id"
-                    width="180">
+                style="width: 100%"
+            >
+                <el-table-column prop="id" label="id" width="180">
                 </el-table-column>
-                <el-table-column
-                    prop="username"
-                    label="用户名"
-                    width="180">
+                <el-table-column prop="username" label="用户名" width="180">
                 </el-table-column>
-                <el-table-column
-                    prop="forum"
-                    label="参与论坛">
+                <el-table-column prop="forum" label="参与论坛">
                 </el-table-column>
             </el-table>
         </div>
@@ -59,67 +48,39 @@ export default {
 
     data() {
         return {
-            searchInfo: '',
+            searchInfo: "",
             //选择框
-            forums: [{
-                id: '1',
-                name: '论坛1'
-            }, {
-                id: '2',
-                name: '论坛2'
-            }, {
-                id: '3',
-                name: '论坛3'
-            }, {
-                id: '4',
-                name: '论坛4'
-            }, {
-                id: '5',
-                name: '论坛5'
-            }],
+            forums: [
+                {
+                    id: "1",
+                    name: "论坛1",
+                },
+                {
+                    id: "2",
+                    name: "论坛2",
+                },
+                {
+                    id: "3",
+                    name: "论坛3",
+                },
+                {
+                    id: "4",
+                    name: "论坛4",
+                },
+                {
+                    id: "5",
+                    name: "论坛5",
+                },
+            ],
             forumsValue: [],
             //表格
-            tableData: [{
-                id: '1',
-                username: '蔡家鑫',
-                forum: '论坛1，论坛2，论坛3'
-                }, {
-                id: '1',
-                username: '蔡家鑫',
-                forum: '论坛1，论坛2，论坛3'
-                }, {
-                id: '1',
-                username: '蔡家鑫',
-                forum: '论坛1，论坛2，论坛3'
-                }, {
-                id: '1',
-                username: '蔡家鑫',
-                forum: '论坛1，论坛2，论坛3'
-                }, {
-                id: '1',
-                username: '蔡家鑫',
-                forum: '论坛1，论坛2，论坛3'
-                }, {
-                id: '1',
-                username: '蔡家鑫',
-                forum: '论坛1，论坛2，论坛3'
-                }, {
-                id: '1',
-                username: '蔡家鑫',
-                forum: '论坛1，论坛2，论坛3'
-                }, {
-                id: '1',
-                username: '蔡家鑫',
-                forum: '论坛1，论坛2，论坛3'
-                },{
-                id: '1',
-                username: '蔡家鑫',
-                forum: '论坛1，论坛2，论坛3'
-                }, {
-                id: '1',
-                username: '蔡家鑫',
-                forum: '论坛1，论坛2，论坛3'
-            }]
+            tableData: [
+                {
+                    id: "请先选择论坛",
+                    username: "请先选择论坛",
+                    forum: "请先选择论坛",
+                },
+            ],
         };
     },
 
@@ -129,59 +90,59 @@ export default {
     },
 
     methods: {
-
-
         tipInfo(info, type) {
             this.$message({
                 message: info,
-                type: type
+                type: type,
             });
         },
 
         initPersonInfo() {
             this.$axios({
-                method:'get',
-                url: '',
+                method: "get",
+                url: "",
             })
-            .then(res => {
-                if (res.code == 200) {
-                    this.tableData = res.data;
-                } else {
-                    this.tipInfo('好像哪里出了点问题','error');
-                }
-            })
-            .catch( err => {
-                console.log(err);
-            }) 
+                .then((res) => {
+                    if (res.code == 200) {
+                        this.tableData = res.data;
+                    } else {
+                        this.tipInfo("好像哪里出了点问题", "error");
+                    }
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
         },
-
-
 
         getForums() {
             this.$axios({
-                method:'get',
-                url: '',
+                method: "get",
+                url: "/forum",
             })
-            .then(res => {
-                if (res.code == 200) {
-                    this.forums = res.data;
-                } else {
-                    this.tipInfo('好像哪里出了点问题','error');
-                }
-            })
-            .catch( err => {
-                console.log(err);
-            }) 
+                .then((res) => {
+                    console.log(res);
+                    this.forums = res.data.data;
+                })
+                .catch((err) => {
+                    console.log(err);
+                    this.tipInfo("好像哪里出了点问题", "error");
+                });
         },
 
-
-        getTableByForum(val="") {
-            if (val.trim() ==  "") {
-                console.log('获取全部');
-            } else {
-                console.log('单个'+val);
-            }
-        }
+        getTableByForum(val) {
+            console.log(val);
+            this.$axios({
+                method: "get",
+                url: `/person/${val}`,
+            })
+                .then((res) => {
+                    console.log(res);
+                })
+                .catch((err) => {
+                    console.log(err);
+                    this.tipInfo("好像哪里出了点问题", "error");
+                });
+        },
     },
 };
 </script>
@@ -197,8 +158,8 @@ export default {
 }
 
 .header i {
-    color: rgb(64,158,255);
-    margin-right: .4em;
+    color: rgb(64, 158, 255);
+    margin-right: 0.4em;
 }
 
 .header {

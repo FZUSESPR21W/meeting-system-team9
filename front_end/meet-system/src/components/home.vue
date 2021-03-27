@@ -102,6 +102,13 @@ export default {
     },
 
     methods: {
+        tipInfo(info, type) {
+            this.$message({
+                message: info,
+                type: type,
+            });
+        },
+
         go_login() {
             this.$router.push({ name: "login" });
         },
@@ -120,10 +127,24 @@ export default {
         },
 
         go_person_info() {
+            if (
+                localStorage.getItem("role") != "秘书" &&
+                localStorage.getItem("role") != "主席"
+            ) {
+                this.tipInfo("权限不足", "warning");
+                return;
+            }
             this.$router.push({ name: "person_info" });
         },
 
         go_send_message() {
+            if (
+                localStorage.getItem("role") != "秘书" &&
+                localStorage.getItem("role") != "分论坛主席"
+            ) {
+                this.tipInfo("权限不足", "warning");
+                return;
+            }
             this.$router.push({ name: "send_message" });
         },
     },

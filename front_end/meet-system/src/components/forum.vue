@@ -11,7 +11,7 @@
             </el-card>
             <el-card class="box-card1" shadow="hover" style="background-image: linear-gradient(to bottom right, #a170f1, #dfbafa);">
                 <div slot="header" class="clearfix">
-                <span style="color:white">论坛议题</span>
+                <span style="color:white">分论坛主席名</span>
                 </div>
                 <div class="text item">
                 {{'巴拉巴拉' }}
@@ -19,7 +19,7 @@
             </el-card>
             <el-card class="box-card1" shadow="hover" style="background-image: linear-gradient(to bottom right, #398af1, #81d4fd);">
                 <div slot="header" class="clearfix">
-                <span style="color:white">分论坛主名、参与人数</span>
+                <span style="color:white">参与人数</span>
                 </div>
                 <div class="text item">
                 {{'巴拉巴拉' }}
@@ -35,8 +35,8 @@
                 <el-option
                 v-for="item in options"
                 :key="item.id"
-                :label="item.label"
-                :value="item.label">
+                :label="item.name"
+                :value="item.id">
                 </el-option>
             </el-select>
       </div>
@@ -87,22 +87,27 @@ export default {
             search: '',
             hidden: true,
             input: '',
-            options: [{
-                id:'1',
-                label: '黄金糕'
-                }, {
-                id:'2',
-                label: '双皮奶'
-                }, {
-                id:'3',
-                label: '蚵仔煎'
-                }, {
-                id: '4',
-                label: '龙须面'
-                }, {
-                id: '5',
-                label: '北京烤鸭'
-                }],
+            options: [
+                {
+                    id: "1",
+                    name: "论坛1",
+                },
+                {
+                    id: "2",
+                    name: "论坛2",
+                },
+                {
+                    id: "3",
+                    name: "论坛3",
+                },
+                {
+                    id: "4",
+                    name: "论坛4",
+                },
+                {
+                    id: "5",
+                    name: "论坛5",
+                },],
             value: '',
             totalinfo:[
                 {
@@ -165,10 +170,7 @@ export default {
             })
         },
         showinfo(){//一开始showinfo全部的信息
-            console.log('111');
-            this.$axios.get('/showinfo').then((res)=>{
-                this.totalinfo = res;
-            })
+            
         },
         creatselect(){
             console.log('更新下拉框');
