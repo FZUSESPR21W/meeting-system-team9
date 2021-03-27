@@ -86,7 +86,7 @@ export default {
 #tabbar {
     /* border: 1px red solid;
     box-sizing: border-box; */
-    height: 7%;
+    height: 10%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -112,7 +112,7 @@ export default {
 #content {
     /* border: 1px red solid;
     box-sizing: border-box; */
-    height: 93%;
+    height: 90%;
     display: flex;
 }
 
@@ -133,7 +133,7 @@ export default {
 }
 
 .icon {
-    margin-right: 2%;
+    margin-right: 5%;
 }
 
 .sidebar_item:hover {
