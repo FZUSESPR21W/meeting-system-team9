@@ -40,7 +40,12 @@ public class ForumService {
 		return userService.getAllUser(forum);
 	}
 	
+    //注册时，用户加入论坛
     public void joinForum(User user, String forumName) {
+    	Forum forum = getForumByName(forumName);
+    	UserForum userForum =  new UserForum();
+    	userForum.setUserid(user.getId());
+    	userForum.setForumid(forum.getId());
 	}
     
     //获取全部论坛的列表
