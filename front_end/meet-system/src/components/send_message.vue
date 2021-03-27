@@ -176,7 +176,6 @@ export default {
     border-radius: 10px;
     text-align: center;
     margin-left: 18%;
-    margin-top: 5%;
 }
 
 .el-form-item {
