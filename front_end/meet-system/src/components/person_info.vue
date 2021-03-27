@@ -130,6 +130,7 @@ export default {
 
     methods: {
 
+
         tipInfo(info, type) {
             this.$message({
                 message: info,
@@ -153,6 +154,8 @@ export default {
                 console.log(err);
             }) 
         },
+
+
 
         getForums() {
             this.$axios({

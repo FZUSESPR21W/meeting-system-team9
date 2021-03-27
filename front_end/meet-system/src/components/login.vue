@@ -28,7 +28,7 @@
                                 v-for="item in forums"
                                 :key="item.id"
                                 :label="item.name"
-                                :value="item.name">
+                                :value="item.id">
                             </el-option>
                         </el-select>
 					</div>
@@ -100,6 +100,7 @@ export default {
             })
             .catch( err => {
                 console.log(err);
+                this.tipInfo('好像哪里出了点问题','error');
             }) 
         },
 
@@ -116,7 +117,9 @@ export default {
             this.password = ''
         },
         login() {
-            console.log('我是登录');
+            if (this.username.trim() == "" || this.password.trim() == "") {
+                this.tipInfo('用户名或密码不能为空！','error');
+            }
             this.$axios({
                 method:'post',
                 url: '',
@@ -145,9 +148,11 @@ export default {
         },
         register(){
             console.log('我是注册');
-            console.log(this.username);
-            console.log(this.password);
+            if (this.username.trim() == "" || this.password.trim() == "") {
+                this.tipInfo('用户名或密码不能为空！','error');
+            }
             console.log(this.forumsValue);
+            
             this.$axios({
                 method:'post',
                 url: '',
@@ -182,7 +187,16 @@ export default {
 <style scoped>
 
 .bform >>> .el-input__inner {
-    margin-bottom: 15px;
+     margin-bottom: 1em; 
+}
+
+.bform >>> .el-input__icon {
+    position: relative;
+    top: -0.5em;
+}
+
+.bform >>> .el-select__tags {
+   transform: translateY(-70%);
 }
 
 #login {
