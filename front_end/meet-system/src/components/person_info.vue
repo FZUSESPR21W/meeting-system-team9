@@ -124,8 +124,8 @@ export default {
     },
 
     created() {
-        getForums();
-        initPersonInfo();
+        this.getForums();
+        this.initPersonInfo();
     },
 
     methods: {
